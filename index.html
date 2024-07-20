@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flipbook PDF</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/6.1.1/css/turn.css">
+</head>
+<body>
+  <div id="flipbook">
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/6.1.1/js/turn.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#flipbook').turn({
+        width: 800,
+        height: 600,
+        pages: 68, // Jumlah halaman (ubah sesuai dengan PDF Anda)
+        pdf: "pdf/titik-balik.pdf" // Ganti "your-file.pdf" dengan nama file PDF Anda
+      });
+    });
+  </script>
+</body>
+</html>
